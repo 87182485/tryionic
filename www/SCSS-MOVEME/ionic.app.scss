@@ -1,0 +1,84 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.main-search-input {
+	height: 36px;
+}
+
+.no-padding-page {
+	padding: 0;
+	.category-list {
+		margin: 0;
+		.selected {
+			border-color: #4F92FF;
+		}
+		
+	}
+	.sublist {
+		margin-left: 20px;
+	}
+	
+}
+.item-full-image {
+	padding: 15px;
+	width: 100%;
+	height: 200px;
+}
+
+.item-card-content {
+	padding: 8px;
+}
+
+.item-card-title {
+	margin: 5px;
+	padding: 5px;
+	font-weight: 500;
+}
+
+.item-card-button-group {
+	width: 100%;
+}
+
+.image {
+	padding: 20px;
+}
+
+.inline-container {
+	display: inline-block;
+	width: 100%;
+}
+
+.button-group-right {
+	width: 50%;
+	.extra-button {
+		margin-left: 25px;
+	}
+	
+}
+.button-group-inline {
+	display: inline;
+}
+
+.inline-header {
+	display: inline-block;
+}
+
+body.platform-ios {
+	font-family: Roboto, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Roboto, sans-serif;
+}
+
+body.platform-android {
+	font-family: Roboto, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Roboto, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+

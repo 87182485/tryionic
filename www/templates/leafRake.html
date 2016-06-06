@@ -1,0 +1,17 @@
+<ion-view title="Leaf Rake" id="page7" hide-nav-bar="false" class=" ">
+    <ion-content padding="true" class=" manual-remove-top-padding has-header">
+        <div class="item item-body detail-container" id="leafRake-list-item-container5">
+            <div class="image">
+                <img src="img/map1.png" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <p id="leafRake-markdown5" style="color:#000000;" class=" ">Leaf rake with 48-inch wooden handle.</p>
+            <div id="leafRake-button-bar4" class=" button-bar button-group-right">
+                <button id="leafRake-button12" style="font-size:20px;" class=" button button-positive button-small button-block button-outline " ng-click="add()">+</button>
+                <button id="leafRake-button13" style="font-size:18px;" class=" button button-positive button-small button-block " ng-bind="quantity"></button>
+                <button id="leafRake-button14" style="font-size:20px;" class=" button button-positive button-small button-block button-outline " ng-click="minus()">-</button>
+            </div>
+            <h2 ng-if="total>0" id="leafRake-heading8" style="color:#000000;text-align:right;" class=" ">{{price | currency}} x {{quantity}} = {{total | currency}}</h2>
+        </div>
+        <button id="leafRake-button11" class=" button button-balanced  button-block icon-left ion-ios-cart-outline " ng-click="$ionicGoBack()">Cart</button>
+    </ion-content>
+</ion-view>

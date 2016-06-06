@@ -1,0 +1,56 @@
+<ion-view title="Pitts Store, Pittsburgh PA." id="page10" class=" ">
+    <ion-content padding="true" class="manual-ios-statusbar-padding">
+        <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Search" ng-model="search" ng-focus="onSearchMode()" ng-blur="offSearchMode()">
+            </label>
+        <div class="list" ng-if="search!==''">
+            <li class="item" ui-sref="main.leafRake" ng-repeat="text in searchData | filter:search">
+                {{text.text}}
+                <span class="badge badge-assertive">{{text.loc}}</span>
+            </li>
+            <li class="item item-icon-left">
+                <i class="icon ion-android-more-horizontal"></i>
+                <span class="positive">Search More</span>
+            </li>    
+        </div>
+        
+        <div class="voice-search-container" ng-if="isSearchMode && search===''">
+            <i class="icon ion-mic-a"></i> Hold Mic to start voice search
+        </div>
+        
+        <div class="list" ng-if="search===''&&!isSearchMode">
+            <h4 ng-if="search===''" id="home-heading1" style="color:#C92121;font-weight:300;font-style:italic;text-align:center;" class=" ">Best Sellings</h4>
+            <div class="list card " id="home-card21">
+                <div class="item-full-image item item-image">
+                    <img src="img/xbox.jpg" width="100%" height="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                </div>
+                <div class="item item-body item-card-content" id="home-list-item-container3">
+                    <ion-list id="home-list1" class=" ">
+                        <ion-item id="home-list-item1" class="  item-card-title">Xbox Controller</ion-item>
+                    </ion-list>
+                    <p id="home-markdown2" style="margin-top:0px;color:#000000;" class=" ">Pro-level customization for a competitive edge.</p>
+                    <div id="home-button-bar1" class=" button-bar item-card-button-group">
+                        <button id="home-button1" class=" button button-assertive  button-block icon ion-android-favorite-outline "></button>
+                        <button id="home-button3" class=" button button-positive  button-block ">$149.95</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list card " id="home-card22">
+                <div class="item-full-image item item-image">
+                    <img src="img/ninja.jpg" width="100%" height="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                </div>
+                <div class="item item-body item-card-content" id="home-list-item-container4">
+                    <ion-list id="home-list2" class=" ">
+                        <ion-item id="home-list-item2" class="  item-card-title">Ninja Blender</ion-item>
+                    </ion-list>
+                    <p id="home-markdown3" style="margin-top:0px;color:#000000;" class=" ">Ninja® Professional Blender & Nutri Ninja® Cups BL660</p>
+                    <div id="home-button-bar2" class=" button-bar item-card-button-group">
+                        <button id="home-button4" class=" button button-assertive  button-block icon ion-android-favorite-outline "></button>
+                        <button id="home-button6" class=" button button-positive  button-block ">$139.95</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
